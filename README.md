@@ -1,4 +1,4 @@
-# Learn-Neural-Networks
+# Neural Network Exploration
 Here I will implement my first Neural Network and subsequently try to explore the possibilities.
 
 Goals:
