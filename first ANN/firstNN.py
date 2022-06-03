@@ -60,12 +60,11 @@ seq_modules = nn.Sequential(
     nn.Linear(20, 10),
 )
 input_image = torch.rand(3, 28, 28)
-logits = seq_modules(input_image)   # apply sequence of transformations (i.e. the model) onto the 'images'
+logits = seq_modules(input_image)  # apply sequence of transformations (i.e. the model) onto the 'images'
 
 softmax = nn.Softmax(dim=1)
-pred_probab = softmax(logits)   # find the class with highest probability (smoothly)
+pred_probab = softmax(logits)  # find the class with highest probability (smoothly)
 
 print(f"Model structure {model}\n\n")
 for name, param in model.named_parameters():
-    print(f"Layer: {name} | Size: {param.size()} | Values: {param[:2]} \n")
-
+    print(f"Layer: {name} | Size: {param.size()} | Values: {param[:2]} \n")  # print layer details
