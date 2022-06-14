@@ -87,7 +87,7 @@ def test_loop(dataloader, model, loss_fn):
 # setting hyperparameters
 learning_rate = 1e-3
 batch_size = 64
-epochs = 100
+epochs = 5
 
 # Initialize loss function and optimization algorithm
 loss_fn = nn.CrossEntropyLoss()
